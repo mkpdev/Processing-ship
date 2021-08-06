@@ -1,24 +1,23 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Process Ship Microservice
 
 Things you may want to cover:
 
 * Ruby version
+	ruby 2.6.6
 
-* System dependencies
+* Rails version
+	Rails 5.2.6
 
-* Configuration
+* Gem install
+	`bundle install`
 
-* Database creation
+* To run rails server
+	`rails server`  
+	run on browser: localhost:3002
 
-* Database initialization
+# Note 
+	This microservice is used for processing queue status ship and return status processed 
+	It takes 20 to 60 seconds for process a ship.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# End Point
+    POST /ship_processing/new
