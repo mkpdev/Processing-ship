@@ -1,7 +1,12 @@
 class ShipProcessingController < ApplicationController
   def new
-  	sleep(rand(20..60))
-  	render json: { ship_params:{
+    name = params[:name]
+
+    puts "#{name} Ship is processing"
+    sleep(rand(20..60))
+    puts "#{name} Ship is processed"
+
+    render json: { ship_params:{
       status: 'processed'
     }};
   end
